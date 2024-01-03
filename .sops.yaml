@@ -1,0 +1,8 @@
+keys:
+  - &user_emrhnpla age1fnxsvznnaph9yvy02mmunnfh0w9m6mpkfrjy0z3ssk7jdz25ruasrsjamd
+
+creation_rules:
+  - path_regex: secrets/[^/]+\.(yaml|json|env|ini)$
+    key_groups:
+      - age:
+          - *user_emrhnpla
