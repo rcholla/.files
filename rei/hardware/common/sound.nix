@@ -1,0 +1,18 @@
+{ config, lib, pkgs, ... }:
+
+{
+  security.rtkit.enable = true;
+
+  sound.enable = true;
+
+  services.pipewire = {
+    enable = true;
+    wireplumber.enable = true;
+    pulse.enable = true;
+    jack.enable = true;
+    alsa = {
+      enable = true;
+      support32Bit = true;
+    };
+  };
+}
