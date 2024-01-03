@@ -1,0 +1,4 @@
+.devenv
+.direnv
+assets/wallpapers/gif/*.gif
+.pre-commit-config.yaml
